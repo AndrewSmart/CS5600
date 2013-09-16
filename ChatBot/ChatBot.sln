@@ -1,0 +1,87 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatBot", "ChatBot.csproj", "{42046FDE-FE95-4F14-A563-F17632D5C153}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PAT.BDD", "src\PATBDDLibPublic\Source\PAT.BDD\PAT.BDD.csproj", "{EBB3AD28-953A-4C12-ADD4-4A6752628280}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PAT.BDD.Testing", "src\PATBDDLibPublic\Source\PAT.BDD.Testing\PAT.BDD.Testing.csproj", "{83AC9229-ADD7-47E6-8756-7B6A8F894F03}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42046FDE-FE95-4F14-A563-F17632D5C153}.Debug|x86.ActiveCfg = Debug|x86
+		{42046FDE-FE95-4F14-A563-F17632D5C153}.Debug|x86.Build.0 = Debug|x86
+		{42046FDE-FE95-4F14-A563-F17632D5C153}.Release|x86.ActiveCfg = Release|x86
+		{42046FDE-FE95-4F14-A563-F17632D5C153}.Release|x86.Build.0 = Release|x86
+		{83AC9229-ADD7-47E6-8756-7B6A8F894F03}.Debug|x86.ActiveCfg = Debug|x86
+		{83AC9229-ADD7-47E6-8756-7B6A8F894F03}.Debug|x86.Build.0 = Debug|x86
+		{83AC9229-ADD7-47E6-8756-7B6A8F894F03}.Release|x86.ActiveCfg = Release|x86
+		{83AC9229-ADD7-47E6-8756-7B6A8F894F03}.Release|x86.Build.0 = Release|x86
+		{EBB3AD28-953A-4C12-ADD4-4A6752628280}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EBB3AD28-953A-4C12-ADD4-4A6752628280}.Debug|x86.Build.0 = Debug|Any CPU
+		{EBB3AD28-953A-4C12-ADD4-4A6752628280}.Release|x86.ActiveCfg = Release|Any CPU
+		{EBB3AD28-953A-4C12-ADD4-4A6752628280}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = src\PATBDDLibPublic\Source\PAT.BDD.Testing\PAT.BDD.Testing.csproj
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = None
+		$1.ResourceNamePolicy = FileFormatDefault
+		$0.TextStylePolicy = $2
+		$2.FileWidth = 120
+		$2.TabWidth = 2
+		$2.IndentWidth = 2
+		$2.NoTabsAfterNonTabs = True
+		$2.inheritsSet = Mono
+		$2.inheritsScope = text/plain
+		$2.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $3
+		$3.NamespaceBraceStyle = EndOfLine
+		$3.ClassBraceStyle = EndOfLine
+		$3.InterfaceBraceStyle = EndOfLine
+		$3.StructBraceStyle = EndOfLine
+		$3.EnumBraceStyle = EndOfLine
+		$3.MethodBraceStyle = EndOfLine
+		$3.ConstructorBraceStyle = EndOfLine
+		$3.DestructorBraceStyle = EndOfLine
+		$3.ElseIfNewLinePlacement = SameLine
+		$3.ArrayInitializerWrapping = DoNotWrap
+		$3.BeforeMethodDeclarationParentheses = False
+		$3.BeforeMethodCallParentheses = False
+		$3.BeforeConstructorDeclarationParentheses = False
+		$3.BeforeIndexerDeclarationBracket = False
+		$3.BeforeDelegateDeclarationParentheses = False
+		$3.AfterDelegateDeclarationParameterComma = True
+		$3.NewParentheses = False
+		$3.IfParentheses = False
+		$3.WhileParentheses = False
+		$3.ForParentheses = False
+		$3.ForeachParentheses = False
+		$3.CatchParentheses = False
+		$3.SwitchParentheses = False
+		$3.LockParentheses = False
+		$3.UsingParentheses = False
+		$3.SpacesBeforeBrackets = False
+		$3.BlankLinesAfterUsings = 0
+		$3.BlankLinesBetweenTypes = 0
+		$3.BlankLinesBetweenMembers = 0
+		$3.MethodDeclarationParameterWrapping = DoNotWrap
+		$3.IndexerDeclarationParameterWrapping = DoNotWrap
+		$3.IndexerArgumentWrapping = DoNotWrap
+		$3.inheritsSet = Mono
+		$3.inheritsScope = text/x-csharp
+		$3.scope = text/x-csharp
+		$0.TextStylePolicy = $4
+		$4.FileWidth = 120
+		$4.TabWidth = 2
+		$4.IndentWidth = 2
+		$4.inheritsSet = Mono
+		$4.inheritsScope = text/plain
+		$4.scope = text/plain
+	EndGlobalSection
+EndGlobal

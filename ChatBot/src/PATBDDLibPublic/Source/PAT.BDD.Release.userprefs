@@ -1,0 +1,17 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="PAT.BDD/Note.txt">
+    <Files>
+      <File FileName="PAT.BDD/Note.txt" Line="1" Column="1" />
+      <File FileName="PAT.BDD/CUDD/CUDD.cs" Line="1" Column="1" />
+      <File FileName="PAT.BDD/Expression/PropertyAssignment.cs" Line="1" Column="1" />
+      <File FileName="PAT.BDD.Testing/Program.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/home/socrates/dev/CS5600/ChatBot/src/PATBDDLibPublic/Source/PAT.BDD.Testing/Program.cs" line="16" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
