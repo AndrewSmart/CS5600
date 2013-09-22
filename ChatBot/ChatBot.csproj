@@ -36,10 +36,4 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <ItemGroup>
-    <ProjectReference Include="src\PATBDDLibPublic\Source\PAT.BDD\PAT.BDD.csproj">
-      <Project>{EBB3AD28-953A-4C12-ADD4-4A6752628280}</Project>
-      <Name>PAT.BDD</Name>
-    </ProjectReference>
-  </ItemGroup>
 </Project>
