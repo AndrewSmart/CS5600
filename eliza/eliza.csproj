@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6BC7C33B-8BC3-46BD-BE35-2E98A58E9F26}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>eliza</RootNamespace>
+    <AssemblyName>eliza</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Psharp">
+      <HintPath>..\Psharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Clean String_2.cs" />
+    <Compile Include="Digit Value_2.cs" />
+    <Compile Include="%27dollar_dummy Eliza__0_1.cs" />
+    <Compile Include="Eliza_0.cs" />
+    <Compile Include="Extract Atomics_2.cs" />
+    <Compile Include="Extract Atomics Aux_2.cs" />
+    <Compile Include="Extract Word_3.cs" />
+    <Compile Include="Extract Word Aux_4.cs" />
+    <Compile Include="Findkeywords_2.cs" />
+    <Compile Include="Findnth_3.cs" />
+    <Compile Include="Isalist_1.cs" />
+    <Compile Include="Last Member_2.cs" />
+    <Compile Include="Lower Case_2.cs" />
+    <Compile Include="Makecomment_3.cs" />
+    <Compile Include="Match_2.cs" />
+    <Compile Include="Match Aux1_2.cs" />
+    <Compile Include="Match Aux2_2.cs" />
+    <Compile Include="Match Aux3_4.cs" />
+    <Compile Include="Mc Aux2_6.cs" />
+    <Compile Include="Mc Aux3_7.cs" />
+    <Compile Include="Mc Aux_4.cs" />
+    <Compile Include="My Char Type_2.cs" />
+    <Compile Include="Process Input_3.cs" />
+    <Compile Include="Quittime_1.cs" />
+    <Compile Include="Read Atomics_1.cs" />
+    <Compile Include="Read Lc String_1.cs" />
+    <Compile Include="Read Lc String Aux_2.cs" />
+    <Compile Include="Remove Initial Blanks_2.cs" />
+    <Compile Include="Replace_4.cs" />
+    <Compile Include="Rules_1.cs" />
+    <Compile Include="Simplify_2.cs" />
+    <Compile Include="Sort Aux_3.cs" />
+    <Compile Include="Sortkeywords_2.cs" />
+    <Compile Include="Sr_4.cs" />
+    <Compile Include="String To Atomic_2.cs" />
+    <Compile Include="String To Number_2.cs" />
+    <Compile Include="String To Number Aux_3.cs" />
+    <Compile Include="Updaterule_4.cs" />
+    <Compile Include="Writecomment_1.cs" />
+    <Compile Include="Writecomment Aux_1.cs" />
+    <Compile Include="Append_3.cs" />
+    <Compile Include="%27dollar_dummy Eliza__1_1.cs" />
+    <Compile Include="Flatten_2.cs" />
+    <Compile Include="Member_2.cs" />
+    <Compile Include="Program.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
