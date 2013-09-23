@@ -9,8 +9,6 @@ namespace eliza {
 			if(args.Length == 0) args = new string[] { "Eliza" };
 			Assembly a = System.Reflection.Assembly.Load("Psharp");
 			a.GetType("JJC.Psharp.Lang.PrologMain").GetMethod("CallbackMain").Invoke(a.CreateInstance( "JJC.Psharp.Lang.PrologMain" ), new object[] { args, Assembly.GetExecutingAssembly() });
-			//Eliza_0 e = new Eliza_0();
-			//e.exec(a);
 		}
 	}
 }

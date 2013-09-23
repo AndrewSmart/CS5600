@@ -31,7 +31,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="Psharp">
-      <HintPath>..\Psharp.dll</HintPath>
+      <HintPath>res\Psharp.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
