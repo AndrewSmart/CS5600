@@ -27,7 +27,7 @@ WHERE	= ..
 
 INCLUDE = $(WHERE)/include
 
-LIBS	= ./libcudd.a $(WHERE)/mtr/libmtr.a \
+LIBS	= ./libcudd.so $(WHERE)/mtr/libmtr.a \
 	$(WHERE)/st/libst.a $(WHERE)/util/libutil.a $(WHERE)/epd/libepd.a
 
 MNEMLIB =
@@ -39,7 +39,7 @@ LINTLIBS = ./llib-lcudd.ln $(WHERE)/mtr/llib-lmtr.ln \
 	$(WHERE)/st/llib-lst.ln $(WHERE)/util/llib-lutil.ln \
 	$(WHERE)/epd/llib-lepd.ln
 
-LDFLAGS	=
+LDFLAGS	= -shared
 
 # files for the package
 P	= cudd
@@ -71,12 +71,16 @@ UBJ	= $(SRC:.c=.u)
 
 #------------------------------------------------------
 
+lib$(P).so: $(POBJ)
+	ar rv $@ $?
+	$(RANLIB) $@
+
 lib$(P).a: $(POBJ)
 	ar rv $@ $?
 	$(RANLIB) $@
 
 .c.o: $(PSRC) $(PHDR)
-	$(CC) -c  $< -I$(INCLUDE) $(CFLAGS) $(DDDEBUG) 
+	$(CC) -shared -c  $< -I$(INCLUDE) $(CFLAGS) $(DDDEBUG) 
 
 optimize_dec: lib$(P).b
 
@@ -111,7 +115,7 @@ lintpgm: lint
 tags: $(PSRC) $(PHDR)
 	ctags $(PSRC) $(PHDR)
 
-all: lib$(P).a lib$(P).b llib-l$(P).ln tags
+all: lib$(P).so lib$(P).b llib-l$(P).ln tags
 
 programs: $(TARGET) $(TARGETu) lintpgm
 

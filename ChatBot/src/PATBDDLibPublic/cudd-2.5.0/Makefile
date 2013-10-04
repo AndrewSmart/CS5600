@@ -7,7 +7,7 @@
 # be overridden from the command line.
 
 # C++ compiler
-CXX	= g++
+CXX	= gcc
 #CXX	= icpc
 #CXX	= ecpc
 #CXX	= CC
@@ -27,7 +27,8 @@ CXXFLAGS =
 # C compiler used for all targets except optimize_dec, which always uses cc.
 #CC	= cc
 #CC	= /usr/local/opt/SUNWspro/bin/cc
-CC	= gcc
+#CC	= gcc
+CC	= g++
 #CC	= icc
 #CC	= ecc
 #CC	= /usr/ucb/cc
@@ -49,6 +50,8 @@ RANLIB	= ranlib
 #ICFLAGS	=
 # These two are typical settings for optimized code with gcc.
 #ICFLAGS	= -g -O3 -Wall
+#ICFLAGS	= -g -O3 -include unistd.h -include stdlib.h -include stdio.h
+#ICFLAGS	= -fPIC -g -O3 -I/usr/include
 ICFLAGS	= -g -O3
 
 # Use XCFLAGS to specify machine-dependent compilation flags.
@@ -59,7 +62,7 @@ ICFLAGS	= -g -O3
 #  Linux
 #
 # Gcc 4.2.4 or higher on i686.
-XCFLAGS	= -mtune=native -malign-double -DHAVE_IEEE_754 -DBSD
+#XCFLAGS	= -mtune=native -malign-double -DHAVE_IEEE_754 -DBSD
 # Gcc 3.2.2 or higher on i686.
 #XCFLAGS	= -mtune=pentium4 -malign-double -DHAVE_IEEE_754 -DBSD
 # Gcc 2.8.1 on i686.
@@ -153,7 +156,7 @@ XCFLAGS	= -mtune=native -malign-double -DHAVE_IEEE_754 -DBSD
 # available memory (expressed in bytes).
 # Recent versions of cygwin have getrlimit, but the datasize limit
 # cannot be set.
-#XCFLAGS	= -mtune=native -malign-double -DHAVE_IEEE_754 -DHAVE_GETRLIMIT=0 -DRLIMIT_DATA_DEFAULT=268435456
+XCFLAGS	= -mtune=native -malign-double -DHAVE_IEEE_754 -DHAVE_GETRLIMIT=0 -DRLIMIT_DATA_DEFAULT=268435456
 
 
 # Define the level of self-checking and verbosity of the CUDD package.
@@ -170,6 +173,7 @@ LDFLAGS	=
 #LDFLAGS	= -jmpopt -Olimit 1000
 # This may be necessary under some old versions of Linux.
 #LDFLAGS	= -static
+LDFLAGS		= -shared
 # This normally makes the program faster on the DEC Alphas.
 #LDFLAGS	= -non_shared -om
 # This is for 32-bit pointers on the DEC Alphas.
