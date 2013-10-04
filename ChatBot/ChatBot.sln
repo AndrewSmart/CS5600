@@ -55,7 +55,7 @@ Global
 		{EBB3AD28-953A-4C12-ADD4-4A6752628280}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = src\PATBDDLibPublic\PAT.BDD.Testing\PAT.BDD.Testing.csproj
+		StartupItem = ChatBot.csproj
 		Policies = $0
 		$0.DotNetNamingPolicy = $1
 		$1.DirectoryNamespaceAssociation = None

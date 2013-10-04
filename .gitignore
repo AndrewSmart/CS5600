@@ -16,6 +16,7 @@ TestResults
 *.suo
 *.user
 *.sln.docstates
+*.userprefs
 
 # Build results
 [Dd]ebug/
@@ -44,6 +45,8 @@ x64/
 *.vspscc
 *.vssscc
 .builds
+*.o
+*.a
 
 # Visual C++ cache files
 ipch/
